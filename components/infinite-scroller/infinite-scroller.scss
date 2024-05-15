@@ -1,0 +1,66 @@
+.logos
+{
+    overflow: hidden;   //hides excess
+    padding: 60px 0;
+    white-space : nowrap;    //puts all images in one straight line
+    position: relative;
+
+    display: flex;
+
+
+    &:before , &:after{
+        position: absolute;
+        top: 0;
+        width: 80px;
+        height: 100%;
+        z-index: 5;
+        content: "";
+    }
+    &:before{
+        left:0;
+        background: linear-gradient(to left, rgba(255,255,255,0),rgb(255, 255, 255,0.8));
+    }
+    &:after{
+        right:0;
+        background: linear-gradient(to right, rgba(255,255,255,0),rgb(255, 255, 255));
+    }
+
+
+
+
+    &:hover .logos-slide{
+        animation-play-state: paused;
+    }
+
+
+    .logos-slide{
+        // max-width: 2468px;
+        max-width: 2476px;
+        // display: inline-block;
+        animation   : 30s slide infinite linear;
+
+        display: flex;
+
+
+        .slide-item, img, .in-card-container{    //images size  --> convert to container
+            height  : 236px;
+            width   : 417px;
+        }
+
+        .in-card{
+            height  :  196px;
+            width   :  196px;
+            border-radius   : 10px;
+            background-color: cadetblue;
+        }
+    }
+}
+
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-110%);
+    }
+}

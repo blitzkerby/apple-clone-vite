@@ -1,0 +1,260 @@
+
+/* --v--|| HERO SECTION ||--v-- */
+.hero-main{
+    height: 69.2rem;
+    background-size: auto 73.6rem;
+}
+
+
+/*--=--||| iPhone 15 Pro |||--=--*/
+
+.iphone-15-pro{
+    color: white;
+    background: url("../../landing-page/iphone-15-pro/iphone-15-large-tall.jpg") center no-repeat;
+    border-bottom: .6rem solid #fff;
+}
+
+
+
+/*--=--||| iPhone 15 |||--=--*/
+
+.iphone-15{
+    color: white;
+    background: url("../../landing-page/iphone-15/iphone15-large-tall.jpg") center no-repeat;
+    border-bottom: .6rem solid #fff;
+}
+
+
+#iphone-15-title-format{
+    color: black
+}
+
+
+
+/* --v--|| Promotion section ||--v--*/
+
+
+
+/*--v--||| two columns |||--v--*/
+
+.two-columns{
+    max-width: 100% !important;
+    height: auto;
+}
+
+
+.align-items-end-custom{
+    padding-right: 2px;
+    padding-left: 2px;
+    gap:15px;
+    margin: 15px;
+}
+
+
+.col-custom{
+    height: 580px;
+}
+
+
+/*--=-- wwdc24 --=--*/
+.wwdc24-container{
+    color: #f2f2f2;
+    position: inherit;
+    background: url("../../landing-page/wwdc24/promo-wwdc24-large.jpg") center no-repeat;
+    width: auto;
+    height: inherit;
+}
+
+
+.wwdc24{
+    background-color: rgb(0, 0, 0);
+}
+
+
+/*--=-- watch series 9 --=--*/
+#watch-series-9-logo{
+    margin-top: 50px;
+    background: url("../../landing-page/watch-series-9/promo-logo-apple-watch-series-9-large.png") center no-repeat;
+}
+
+
+#watch-series-9-sub-heading-format{
+    color:#f2f2f2;
+}
+
+
+.watch-series-9{
+    background-color: black;
+    background: url("../../landing-page/watch-series-9/apple-watch-series-9-large.jpg") center no-repeat;
+}
+
+
+
+/*--=-- card --=--*/
+#card-logo{
+    margin-top: 50px;
+    background: url("../../landing-page/card/logo-large.png") center no-repeat;
+}
+
+#card{
+    background: url("../../landing-page/card/apple-card-large.jpg") center no-repeat;   
+}
+
+/*--=-- trade-in --=--*/
+#trade-in-logo {
+    margin-top: 50px;
+    background: url("../../landing-page/trade-in/logo-trade-in-large.png") center no-repeat;
+}
+
+#trade-in-iphones {
+    background: url("../../landing-page/trade-in/trade-in-large.jpg") center no-repeat;
+}
+
+
+/*--=-- iPad --=--*/
+.ipad{
+    color: white;
+    background: url("../../landing-page/ipad/ipad-large.jpg") center no-repeat;
+}
+
+
+#ipad{
+    background: url("../../landing-page/ipad/ipad-large.jpg") center no-repeat;
+}
+
+.light-theme{
+    color: white;
+}
+
+
+
+
+/*--=-- macbook air --=--*/
+
+#macbook-air{
+    background: url("../../landing-page/macbook-air/macbook-air-m3-large.jpg") center no-repeat;
+}
+
+
+
+
+#light-theme-heading-format{
+    font-size: 35px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: 0em;
+    
+    color: rgba(1, 1, 1, 0.9);
+}
+
+
+#light-theme-sub-heading-format{
+    font-size: 20px;
+    line-height: 0.2;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+    color: rgba(48, 46, 46, 0.8);
+}
+
+#light-theme-sub-heading-format-2{
+    font-size: 20px;
+    // line-height: 0.2;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+    color: rgba(48, 46, 46, 0.8);
+}
+
+
+#light-theme{ 
+    font-size: 17px;
+}
+
+#line-breaks-sub-heading-format{
+    padding-top: 420px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*--^--|| Promotion section ||--^--*/
+
+
+
+
+.todays-acoustic-image{
+    translate: -10px;
+    background-color: #244EB4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .in-card{
+        background: url("../../landing-page/auto-scroll/todays-acoustic.jpg") center no-repeat;
+        background-size: contain;
+    }
+}
+.apple-music-image{
+    background-color: #0066CC;
+    display: flex;
+    align-items: center;
+    .in-card{
+        background: url("../../landing-page/auto-scroll/apple-music.jpg") center no-repeat;
+        background-size: contain;
+    }
+}
+
+
+
+
+
+
+/* --^--|| HERO SECTION ||--^--*/
+@media screen and (max-width: 850px) {
+    #card-logo , #trade-in-logo {
+        margin-top: 0;
+    }
+
+    #card , #trade-in-iphones , .watch-series-9 {
+        padding-top: 64px;
+    }
+
+    .row{
+        display:block
+    }
+
+    .align-items-end-custom{
+        margin: 0;
+        padding: 0;
+    }
+
+    #watch-series-9-logo{
+        margin: 0;
+    }
+
+
+    html{
+        width:fit-content;
+    }
+
+    .iphone-15-pro{
+        background: url("../../landing-page/iphone-15-pro/iphone-15-small-2x.jpg");
+    }
+
+
+    .iphone-15{
+        background: url("../../landing-page/iphone-15/iphone-15-small_2x.jpg");
+    }
+
+
+    .hero-main {
+        background-size: auto 74.8rem;
+        background-position: bottom center;
+        background-repeat: center;
+        
+    }
+
+
+    .title-heading-watch{
+        margin-top: -.5rem;
+        margin-bottom: 0;
+
+    }
+}

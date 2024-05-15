@@ -1,0 +1,591 @@
+/*--v-- Mac Page --v---*/
+sub-header {
+    padding-top: 47px;
+}
+
+#carousel-header{
+    font-size: 4rem;
+}
+#get-to-know-mac{
+    .container-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.mac-promotion-section {
+    .title-wrapper{
+        height: 169px;
+    }
+
+
+    .sub-heading-wrapper{
+        align-items: end;
+    }
+
+
+    .title-main{
+        // @extend .title-main;
+        // justify-content: start;
+        text-align: start;
+        padding: 0 30px;
+    }
+
+    .title-sub-heading{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}
+
+.mac-promotion-video{
+    width: inherit;
+    height: auto;
+    border-radius: 50px;
+}
+
+
+.mac-title-text{
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+
+.mac-title-heading{
+    padding: 0 30px;
+}
+
+
+
+.carousel-container{
+
+    // padding-top: 90px;
+    .container-fluid{
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
+
+
+    .col-3{
+        max-width: 400px;
+        min-width: 280px;
+    }
+
+
+    h3{
+        font-weight: 450;
+    }
+
+
+    .card-1 {
+        background: url('../../mac-page/card-section/card-1.jpg') center no-repeat;
+        background-position: 0 10px;
+    }
+
+    .card-2 {
+        background: url('../../mac-page/card-section/mac_performance__dh5hyac1zf8m_large_2x.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    .card-3 {
+        background: url('../../mac-page/card-section/mac_iphone__gh1tblkt6bqm_large_2x.jpg') center no-repeat;
+        background-size: cover;
+
+
+
+        p,
+        h3 {
+            color: black;
+        }
+    }
+
+
+    .card-4 {
+        background: url('../../mac-page/card-section/mac_compatibility__cu59oukz81ci_large_2x.jpg') center no-repeat;
+        background-size: cover;
+
+
+        p,
+        h3 {
+            color: black;
+        }
+    }
+
+    .card-5 {
+        background: url('../../mac-page/card-section/mac_security__gfwda10khdym_xlarge_2x.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    .h-100 {
+        height: 666px !important;
+    }
+}
+
+
+
+.faded{
+    opacity: 0.5 !important; /* Initially hidden */
+    transition: opacity 0.2s ease-in-out; /* Transition for opacity */
+}
+
+
+
+.hidden{
+    opacity: 0 !important; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Transition for opacity */
+    z-index: -1;
+}
+
+
+
+//------v-----LINE UP SECTION-------V--------
+.lineup{
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    background-color: whitesmoke;
+    padding: 0 50px;
+
+    .fw-bolder{
+        svg{
+            margin: 35px 0;
+        }
+    }
+    
+    .fw-bold{
+        svg{
+            margin: 48px 0;
+        }
+    }
+
+    .fw-footer{
+        svg{
+            margin: 50px 0;
+        }
+    }
+
+    .image-list{
+        height: 1400px !important;
+    }
+    
+    .image-container{
+        width: 100%;
+        padding: 20px;
+        height: 350px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .breadcrumb-item{
+        font-size: 17px;
+    }
+
+    .row{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        margin: 0 !important;
+        & > *{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    .col{
+        width: 100%;
+        max-width: 355px;
+
+        height: 1400px;
+    }
+
+
+    .card-body{
+        flex: none;
+        .cta-buy-button{
+            --bs-btn-border-color   : none;
+
+            --bs-btn-hover-bg       : none;
+            --bs-btn-hover-color    : blue;
+            
+            --bs-btn-active-bg      : none;
+            --bs-btn-active-color   : none;
+        }
+
+        .image-container{
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        .cta{
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+    }
+
+    .card {
+        --bs-card-space-y: none;
+        --bs-card-space-x: none;
+
+        --bs-card-title-spacer-y: none;
+        --bs-card-title-color: none;
+
+        --bs-card-subtitle-color: none;
+
+        --bs-card-border-width: none;
+        --bs-card-border-color: none;
+
+        --bs-card-border-radius: none;
+        --bs-card-box-shadow: none;
+        --bs-card-inner-border-radius: none;
+
+        --bs-card-cap-padding-y: none;
+        --bs-card-cap-padding-x: none;
+        
+        --bs-card-cap-bg: none;
+        --bs-card-cap-color: none;
+
+        --bs-card-height: none;
+        --bs-card-color: none;
+        --bs-card-bg: none;
+        
+
+    }
+
+    .card img{
+        width: inherit;
+        object-fit: contain;
+        
+        transform: scale(1);  /* Start at normal scale (100%) */
+        transition: transform 0.5s ease;  /* Smooth transition over 0.5s */
+
+        &:hover{
+            transform: scale(1.09);
+        }
+    }
+    
+    .h-100{
+        row-gap: 50px;
+    }
+
+    .container{
+        .button-group .btn-primary {
+            --bs-btn-color: black;
+            --bs-btn-bg: white;
+            --bs-btn-border-color: none;
+
+            --bs-btn-hover-bg: black;
+            --bs-btn-active-bg: black;
+            --bs-btn-active-color: white;
+        }
+
+        .button-group{
+            .bg-primary{
+                background-color:white !important
+            }
+        }
+
+        .laptops, .displays, .desktops{
+            opacity: 1
+        }
+
+
+        .gallery-container{
+            height: 1600px;
+
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .gallery-item{
+                transition: opacity 0.5s ease-in-out;
+                opacity: 1;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+            }
+        }
+    }
+
+    .rounded-pill-container{
+        border-radius: var(--bs-border-radius-pill) !important;
+
+
+        border-top-left-radius: 1px;
+
+
+        height: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        padding: 0 4px;
+    }
+}
+
+#laptop-gallery, #desktop-gallery, #display-gallery{
+    .h-100{
+        display:grid;
+    }
+    .image-list{
+        gap: 0;
+    }
+    .image-item{
+        width:350px;
+    }
+}
+//------^-----LINE UP SECTION-------^--------
+
+//------v-----BUY AMC-------V-------
+.buy-mac{
+
+    .card{
+        width: 405px;
+        height: 295.59px;
+    }
+
+    .modal-content{
+        width: 816px;
+
+        height: auto;
+        min-height: 477px;
+    }
+    
+    .fw-subtext{
+        text-align: start;
+    }
+    .image-item{
+        width: auto !important;
+        height: auto;
+    }
+
+    .btn-primary{
+        --bs-btn-color: black;
+        --bs-btn-bg: white;
+        --bs-btn-border-color: none;
+
+        --bs-btn-hover-color: grey;
+        --bs-btn-hover-bg: white;
+        --bs-btn-hover-border-color: grey;
+
+        --bs-btn-active-bg: white;
+        --bs-btn-active-border-color: none;
+
+        --bs-btn-disabled-bg: none;
+        --bs-btn-disabled-border-color: none;
+    }
+
+    .btn-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .card-body *{
+        margin: 3px 0;
+    }
+
+    .text-container{
+        height: 117.59px
+    }
+
+
+
+    .modal-dialog{
+        max-width: none;
+        margin: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-body, .modal-footer{
+        padding: 0 76px;
+        a{
+            font-size: 17px;
+        }
+    }
+    .fw-subtext{
+        margin-bottom: 20px;       
+    }
+
+    .modal-footer{
+        margin-top: 20px;
+    }
+
+    .modal-header, .modal-footer{
+        border: none;
+    }
+    .btn-close{
+        --bs-btn-close-bg: none;
+        --bs-btn-close-opacity: none;
+        height: 44px;
+        width: 44px;
+    }
+
+    h3{
+        font-size:19px;
+        margin-bottom: 12px;
+    }
+
+    .display-5{
+        font-weight: 500;
+        line-height: 41px;
+        margin-bottom: 20px;
+    }
+    .mb-5{
+        margin-bottom: 40px !important;
+    } 
+
+    .image-list{
+        display: flex !important;
+        height: auto !important;
+    }
+    .slider-wrapper{
+        margin-top: 45px;
+        
+    }
+    .container-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+//------^-----BUY MAC-------^-------
+
+.significant-others{
+    height: 1463px;
+    // background-color: antiquewhite;
+
+    .accordion{
+        max-width: 300px;
+        align-items: center;
+        height: 100%;
+        display: flex;
+
+        --bs-accordion-btn-focus-box-shadow: none;
+        --bs-accordion-bg: none;
+        --bs-accordion-border-color: none;
+        --bs-accordion-active-bg: none;
+    }
+
+
+    .container{
+        padding: 0 70px
+    }
+    .card-body{
+        height: 400px;
+        background-color: #fafafa;
+    }
+
+    .accordion-body{
+        p{
+            padding-right: 30px;
+        }
+
+        .collapse{
+            animation: none;
+            opacity: 0;
+        }
+
+        *{
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        img{
+            width: 57%;
+            object-fit: contain;
+            padding: 30px;
+            padding-top: 70px;
+
+            position: absolute;
+
+            top:0;
+            right: 0;
+        }
+    }
+
+
+
+    @media screen and (max-width: 850px) {
+
+        .accordion{
+            max-width: 100%;
+        }
+        .accordion{
+            max-width: 80%;
+        }
+        .card-body{
+            display: flex;
+            justify-content: center;
+        }
+
+        .accordion-body{
+            img{
+                width: 100%;
+
+                translate: 0;
+                position: relative;
+                right: unset;
+            }
+
+        }        
+    }
+}
+
+.title-sub-heading{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.fw-bolder {
+    font-weight: 600 !important;
+    letter-spacing: -0.3px;
+    font-size: 28px;
+}
+
+.fw-bold {
+    font-weight: 600 !important;
+    font-size: 16.5px;
+    margin-bottom: 0;
+}
+
+.fw-subtext { 
+    font-size: 17px;
+    font-weight: 350;
+    letter-spacing: 0.05px;
+}
+
+.fw-footer{
+
+    font-size: 12px;
+    font-weight: 350;
+    letter-spacing: 0.05px;
+    margin-bottom: 30px;
+}
+
+.align-breaks{
+    height: 50px;
+    padding: 0;
+}
+
+.stack-bottom{
+    margin: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .row-cols-1>*{
+        display:flex;
+        justify-content:center;
+    }
+
+
+    .pb-2{
+        text-align: center
+    }
+}

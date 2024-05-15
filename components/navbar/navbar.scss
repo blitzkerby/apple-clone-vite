@@ -1,0 +1,359 @@
+ @font-face {
+font-family: "SF Pro Display Regular";
+src: url("/fonts/SanFranciscoFont-master/SanFranciscoDisplay-Regular.otf");
+}
+
+/* global */
+.feature-icon {
+    display: flex;
+    justify-content: center;
+}
+
+* *::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "SF Pro Display Regular", sans-serif;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+/* --v--| header section |--v-- */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1400;
+    height: 4.5rem;
+    background-color: #fafafc;
+    backdrop-filter: blur(2rem);
+    transition: height 0.3s ease-in-out;
+}
+
+.container-wrapper {
+    width: 100%;
+}
+
+.container,
+.header-container {
+    max-width: 996px;
+    margin: 0 auto;
+    height: inherit;
+    padding: 0;
+}
+
+.sub-navi-items-hidden>.sub-navi-container {
+    display: block;
+    position: absolute;
+    visibility: none;
+    opacity: 0;
+}
+
+.sub-navi-items-hidden>.sub-navi-container>* {
+    display: none;
+}
+
+.sub-navi-items {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.sub-navi-items a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.sub-navi-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-navi-items .stand-out .navi-link {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.sub-navi-items .sub-text .navi-link {
+    font-size: 12px;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.sub-navi-items .sub-navi-container {
+    width: 100%;
+    animation: fadeIn 3s ease-in;
+    transition: opacity 5s;
+}
+
+.sub-navi-items .sub-navi-container .navi-header {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sub-navi-items .sub-navi-container-one {
+    max-width: 264px;
+}
+
+.sub-navi-items .sub-navi-container-two {
+    max-width: 127px;
+}
+
+.sub-navi-items .sub-navi-container-three {
+    max-width: 168px;
+}
+
+.navi-img {
+    display: flex;
+    width: 30px;
+    height: inherit;
+    justify-content: center;
+}
+
+.navi-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navi-list-mobile {
+    display: none;
+}
+
+.navi-link {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    padding: 0 1rem;
+    transition: opacity 0.5s;
+    font-weight: 600;
+}
+
+.navi-link:hover {
+    opacity: 0.7;
+}
+
+.navi-link-apple {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("/navbar/icons/apple.svg") center no-repeat;
+}
+
+.navi-link-search {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("/navbar/icons/search.svg") center no-repeat;
+}
+
+.navi-link-bag {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("/navbar/icons/bag.svg") center no-repeat;
+}
+
+.expand {
+  height: 492px !important;
+  visibility: 1;
+}
+/* --^--| header section |--^-- */
+
+/* --v--|| MEDIA SCREEN ||--v--*/
+@media screen and (max-width: 850px) {
+    .row 
+    {
+        display: block;
+    }
+    .align-items-end-custom 
+    {
+        margin: 0;
+        padding: 0;
+    }
+    html 
+    {
+        width: fit-content;
+    }
+    header {
+        height: 4.8rem;
+        transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        -moz-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        -ms-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    header.container,
+    header.header-container
+    {
+        padding: 0;
+    }
+    .sub-navi-items>*
+    {
+        display: none;
+        visibility: none;
+    }
+    .expand
+    {
+        height: 4.8rem !important;
+        visibility: 0;
+    }
+    .navi-list
+    {
+        margin-top: 0;
+    }
+    .navi-list-mobile
+    {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    .navi-list-mobile>.navi-logo 
+    {
+        justify-content: left;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .navi-item 
+    {
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .navi-item-hidden 
+    {
+        display: none;
+    }
+    .mobile-menu 
+    {
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .line 
+    {
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: rgba(1, 1, 1, 0.9);
+        transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .line-top 
+    {
+        margin-top: 3px;
+    }
+
+    .line-bottom
+    {
+        margin-top: -0.4rem;
+    }
+
+    .active .line-top 
+    {
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .active .line-bottom 
+    {
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    header.active 
+    {
+        position: fixed;
+        height: 100%;
+        background-color: #000;
+    }
+
+    .navi-link-apple 
+    {
+        width: 1.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .navi-link-bag,
+    .navi-link-search 
+    {
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+    .navi 
+    {
+        position: relative;
+    }
+
+    .navi-link 
+    {
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .navi-list-larger 
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+        background: rgb(255, 255, 255);
+    }
+    .active .navi-list-larger 
+    {
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+    .active .navi-link-bag,
+    .active .navi-link-search
+    {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .navi-list-larger .navi-item
+    {
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(225, 225, 225, 0.1);
+    }
+    .active .navi-list-larger .navi-item
+    {
+        animation: fadeIn 1s ease-in;
+    }
+}
