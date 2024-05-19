@@ -1,14 +1,4 @@
-import './navbar.scss'
-import { navbarPurpose } from "./navbarPurpose.js"
-
-
-
-// import javascriptLogo from '../../javascript.svg'        //delete me!
-// import viteLogo from '/vite.svg'                         //delete me!
-// import { setupCounter } from '../../public/counter.js'   //delete me!
-
-
-document.querySelector("#navbar").innerHTML = `
+<!--NAVBAR HTML-->
 <header>
     <div  class="container-wrapper">
         <div  class="container">
@@ -36,7 +26,7 @@ document.querySelector("#navbar").innerHTML = `
                     <li  class="navi-item"  id="nav-tv-home"        ><a  href="#"                 class="navi-link">   TV & Home   </a></li>
                     <li  class="navi-item"  id="nav-entertainment"  ><a  href="#"                 class="navi-link">   Entertainment   </a></li>
                     <li  class="navi-item"  id="nav-accessories"    ><a  href="#"                 class="navi-link">   Accessories   </a></li>
-                    <li  class="navi-item"  id="nav-support"        ><a  href="#"                 class="navi-link">   Support   </a></li>
+                    <li  class="navi-item"  id="nav-support"        ><a  href="./experiment.html" class="navi-link">   Support   </a></li>
 
                     <li  class="navi-item  navi-item-hidden"  id="search-icon"><div  class="navi-img">  <a  href="#"  class="navi-link  navi-link-search"></a>   </div>  </li>
                     <li  class="navi-item  navi-item-hidden"  id="bag-icon"   ><div  class="navi-img">  <a  href="#"  class="navi-link  navi-link-bag"   ></a>   </div>  </li>
@@ -84,6 +74,3 @@ document.querySelector("#navbar").innerHTML = `
         </div>
     </div>
 </header>
-`
-
-navbarPurpose(document.querySelector("header"))

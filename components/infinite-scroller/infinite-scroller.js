@@ -24,8 +24,6 @@ document.querySelector('#infinite-scroller-section').innerHTML = `
             </div>
         </div>
     </div>
-
-    <button class="custom-button" id="carousel-button">custom button</button>
 </section>
 `
 

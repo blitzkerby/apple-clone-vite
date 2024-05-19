@@ -1,13 +1,18 @@
-window.addEventListener("load", () => {
-  document.querySelector(".laptops").classList.remove("hidden");
-  document.querySelector(".btn-1").classList.add("active");
-});
+import "../../components/carousel/carousel.scss";
+import { initiateSlider } from "../../components/carousel/carouselPurpose.js";
+
+
+initiateSlider("get-to-know-mac");
+initiateSlider("laptop-gallery");
+initiateSlider("desktop-gallery");
+initiateSlider("display-gallery");
+initiateSlider("buy-mac");
+initiateSlider("mac-essentials");
+
 
 const selectElement = (Element) => document.querySelector(Element);
-
-const buttonContainer   = document.querySelector(".btn-menu");
-const galleryItems      = document.querySelectorAll(".gallery-item");
-
+const buttonContainer = document.querySelector(".btn-menu");
+const galleryItems = document.querySelectorAll(".gallery-item");
 
 galleryItems.forEach((item) => item.classList.add("hidden"));
 
@@ -29,7 +34,9 @@ buttonContainer.addEventListener("click", (event) => {
   }
 });
 
+window.addEventListener("load", () => {
+  document.querySelector(".laptops").classList.remove("hidden");
+  document.querySelector(".btn-1").classList.add("active");
+});
 
-
-
-
+//

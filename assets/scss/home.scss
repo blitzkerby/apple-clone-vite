@@ -6,21 +6,19 @@
 }
 
 
-/*--=--||| iPhone 15 Pro |||--=--*/
-
+/*--=-- iPhone 15 Pro --=--*/
 .iphone-15-pro{
     color: white;
-    background: url("../../landing-page/iphone-15-pro/iphone-15-large-tall.jpg") center no-repeat;
+    background: url("/landing-page/iphone-15-pro/iphone-15-large-tall.jpg") center no-repeat;
     border-bottom: .6rem solid #fff;
 }
 
 
 
-/*--=--||| iPhone 15 |||--=--*/
-
+/*--=-- iPhone 15 --=--*/
 .iphone-15{
     color: white;
-    background: url("../../landing-page/iphone-15/iphone15-large-tall.jpg") center no-repeat;
+    background: url("/landing-page/iphone-15/iphone15-large-tall.jpg") center no-repeat;
     border-bottom: .6rem solid #fff;
 }
 
@@ -35,7 +33,7 @@
 
 
 
-/*--v--||| two columns |||--v--*/
+/*--v-- two columns --v--*/
 
 .two-columns{
     max-width: 100% !important;
@@ -60,7 +58,7 @@
 .wwdc24-container{
     color: #f2f2f2;
     position: inherit;
-    background: url("../../landing-page/wwdc24/promo-wwdc24-large.jpg") center no-repeat;
+    background: url("/landing-page/wwdc24/promo-wwdc24-large.jpg") center no-repeat;
     width: auto;
     height: inherit;
 }
@@ -74,7 +72,7 @@
 /*--=-- watch series 9 --=--*/
 #watch-series-9-logo{
     margin-top: 50px;
-    background: url("../../landing-page/watch-series-9/promo-logo-apple-watch-series-9-large.png") center no-repeat;
+    background: url("/landing-page/watch-series-9/promo-logo-apple-watch-series-9-large.png") center no-repeat;
 }
 
 
@@ -85,7 +83,7 @@
 
 .watch-series-9{
     background-color: black;
-    background: url("../../landing-page/watch-series-9/apple-watch-series-9-large.jpg") center no-repeat;
+    background: url("/landing-page/watch-series-9/apple-watch-series-9-large.jpg") center no-repeat;
 }
 
 
@@ -93,33 +91,33 @@
 /*--=-- card --=--*/
 #card-logo{
     margin-top: 50px;
-    background: url("../../landing-page/card/logo-large.png") center no-repeat;
+    background: url("/landing-page/card/logo-large.png") center no-repeat;
 }
 
 #card{
-    background: url("../../landing-page/card/apple-card-large.jpg") center no-repeat;   
+    background: url("/landing-page/card/apple-card-large.jpg") center no-repeat;   
 }
 
 /*--=-- trade-in --=--*/
 #trade-in-logo {
     margin-top: 50px;
-    background: url("../../landing-page/trade-in/logo-trade-in-large.png") center no-repeat;
+    background: url("/landing-page/trade-in/logo-trade-in-large.png") center no-repeat;
 }
 
 #trade-in-iphones {
-    background: url("../../landing-page/trade-in/trade-in-large.jpg") center no-repeat;
+    background: url("/landing-page/trade-in/trade-in-large.jpg") center no-repeat;
 }
 
 
 /*--=-- iPad --=--*/
 .ipad{
     color: white;
-    background: url("../../landing-page/ipad/ipad-large.jpg") center no-repeat;
+    background: url("/landing-page/ipad/ipad-large.jpg") center no-repeat;
 }
 
 
 #ipad{
-    background: url("../../landing-page/ipad/ipad-large.jpg") center no-repeat;
+    background: url("/landing-page/ipad/ipad-large.jpg") center no-repeat;
 }
 
 .light-theme{
@@ -132,9 +130,9 @@
 /*--=-- macbook air --=--*/
 
 #macbook-air{
-    background: url("../../landing-page/macbook-air/macbook-air-m3-large.jpg") center no-repeat;
+    background: url("/landing-page/macbook-air/macbook-air-m3-large.jpg") center no-repeat;
 }
-
+/*--^--| two columns |--^--*/
 
 
 
@@ -176,10 +174,32 @@
 }
 
 /*--^--|| Promotion section ||--^--*/
+.carousel-section{
+    .container-wrapper{
+        display:flex;
+        justify-content: center;
+    }
+    .image-list{
+        display:flex !important;
+        // gap: 970px !important;
+        scroll-snap-type: x mandatory;
+    }
+    .image-item{
+        width: 970px !important;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+    .image-item img{
+        height: auto;
+        width: 100%;
+    }
+
+}
 
 
 
 
+/*--v--|| infinite scroller ||--v--*/
 .todays-acoustic-image{
     translate: -10px;
     background-color: #244EB4;
@@ -187,7 +207,7 @@
     justify-content: center;
     align-items: center;
     .in-card{
-        background: url("../../landing-page/auto-scroll/todays-acoustic.jpg") center no-repeat;
+        background: url("/landing-page/auto-scroll/todays-acoustic.jpg") center no-repeat;
         background-size: contain;
     }
 }
@@ -196,17 +216,15 @@
     display: flex;
     align-items: center;
     .in-card{
-        background: url("../../landing-page/auto-scroll/apple-music.jpg") center no-repeat;
+        background: url("/landing-page/auto-scroll/apple-music.jpg") center no-repeat;
         background-size: contain;
     }
 }
+/*--^--|| infinite scroller ||--^--*/
 
 
 
 
-
-
-/* --^--|| HERO SECTION ||--^--*/
 @media screen and (max-width: 850px) {
     #card-logo , #trade-in-logo {
         margin-top: 0;
@@ -235,12 +253,12 @@
     }
 
     .iphone-15-pro{
-        background: url("../../landing-page/iphone-15-pro/iphone-15-small-2x.jpg");
+        background: url("/landing-page/iphone-15-pro/iphone-15-small-2x.jpg");
     }
 
 
     .iphone-15{
-        background: url("../../landing-page/iphone-15/iphone-15-small_2x.jpg");
+        background: url("/landing-page/iphone-15/iphone-15-small_2x.jpg");
     }
 
 

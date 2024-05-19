@@ -64,3 +64,10 @@
         transform: translateX(-110%);
     }
 }
+
+@media screen and (max-width: 850px) {
+    .infinite-scroller-section{
+        max-width: 780px;
+    }
+}
+
