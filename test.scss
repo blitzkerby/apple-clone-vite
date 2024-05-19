@@ -160,4 +160,26 @@ footer {
     font-weight: 10;
     color:rgb(117,117,118)
 }
+
+
+@mixin clearOutAccordion{
+    --bs-accordion-bg: none !important;
+    --bs-accordion-color: none !important;
+
+    --bs-accordion-btn-focus-box-shadow: none !important;
+
+    --bs-accordion-active-color: none !important;
+    --bs-accordion-active-bg: none !important;
+
+    --bs-accordion-border-color: none !important;
+}
+
+.accordion{
+    @include clearOutAccordion;
+    .accordion-button{
+        padding: 0 !important;
+    }
+}
+
+
 /* --^--|| footer section ||--^-- */

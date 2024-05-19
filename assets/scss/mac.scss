@@ -2,7 +2,12 @@
 sub-header {
     padding-top: 47px;
 }
-
+.row{
+    display: flex !important;
+}
+.carousel-container{
+    margin-left: 0 !important;
+}
 #carousel-header{
     font-size: 4rem;
 }
@@ -57,6 +62,7 @@ sub-header {
 #get-to-know-mac .image-list{
     gap: 144px;
     height: 740px;
+    overflow: hidden;
     .card{
         height: 740px !important;
         width: 405px;
@@ -539,11 +545,13 @@ sub-header {
 .mac-essentials{
     display: flex;
     justify-content: center;
-
-    .image-item{
-        width: 560px !important;
+    .image-list{
+        padding: 0 !important;
     }
-
+    .image-item{
+        width: auto !important;
+        height: auto !important;
+    }
     .row{
         display: flex;
     }
@@ -567,6 +575,7 @@ sub-header {
         height: 560px;
         background-color: rgba(250,250,250);
     }
+    
 }
 
 #mac-essentials{
@@ -594,12 +603,6 @@ subfooter{
         height: inherit;
         padding: 0;
     }
-    .sub-navi-items {
-        display: flex;
-        padding-top: 20px;
-        padding-left: 20px;
-    }
-
     .sub-navi-items a {
         text-decoration: none;
         padding: 0;
@@ -644,9 +647,44 @@ subfooter{
     .sub-navi-items .sub-navi-container-three {
         max-width: 168px;
     }
+    .title-heading{
+        padding: 0 15px !important;
+    }
+    .navi-link{
+        margin-bottom: 13px;
+    }
+    @media screen and (max-width: 850px){
+        .sub-navi-items>*
+        {
+            display: block !important;
+            visibility: visible !important;
+            padding: 0 !important;
+        }
+        .navi-item{
+            width:100% !important;
+            height: auto;
+            justify-content: start !important;
+            padding: 0;
+        }
+        .navi-link{
+            white-space: nowrap;   
+        }
+    }
+    @media screen and (max-width: 734px) {
+        .sub-navi-items{
+            display:grid;
+            grid-template-rows: auto 1fr;  /* Define rows: first row auto-size, second row takes 1 fraction */
+            grid-template-columns: 0.5fr 1fr;     /* Define a single column for all items */          
+        }
+        .sub-navi-container-two , .sub-navi-container-three{
+            grid-row-start: 2;  /* Place items 2 and 3 on the second row */
+        }
+    }
 }
 //---^--- footer ---^---
-
+section{
+    overflow: hidden;
+}
 
 
 .title-sub-heading{

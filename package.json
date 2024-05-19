@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "clear": "vite --force",
-    "setup-server":"vercel init vite",
+    "setup-server": "vercel init vite",
     "vercel": "vercel"
   },
   "devDependencies": {
