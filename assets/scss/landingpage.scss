@@ -5,8 +5,7 @@
 }
 
 
-/*--=--||| iPhone 15 Pro |||--=--*/
-
+/*--=-- iPhone 15 Pro --=--*/
 .iphone-15-pro{
     color: white;
     background: url("/landing-page/iphone-15-pro/iphone-15-large-tall.jpg") center no-repeat;
@@ -15,8 +14,7 @@
 
 
 
-/*--=--||| iPhone 15 |||--=--*/
-
+/*--=-- iPhone 15 --=--*/
 .iphone-15{
     color: white;
     background: url("/landing-page/iphone-15/iphone15-large-tall.jpg") center no-repeat;
@@ -34,7 +32,7 @@
 
 
 
-/*--v--||| two columns |||--v--*/
+/*--v-- two columns --v--*/
 
 .two-columns{
     max-width: 100% !important;
@@ -133,7 +131,7 @@
 #macbook-air{
     background: url("/landing-page/macbook-air/macbook-air-m3-large.jpg") center no-repeat;
 }
-
+/*--^--| two columns |--^--*/
 
 
 
@@ -175,10 +173,32 @@
 }
 
 /*--^--|| Promotion section ||--^--*/
+.carousel-section{
+    .container-wrapper{
+        display:flex;
+        justify-content: center;
+    }
+    .image-list{
+        display:flex !important;
+        // gap: 970px !important;
+        scroll-snap-type: x mandatory;
+    }
+    .image-item{
+        width: 970px !important;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+    .image-item img{
+        height: auto;
+        width: 100%;
+    }
+
+}
 
 
 
 
+/*--v--|| infinite scroller ||--v--*/
 .todays-acoustic-image{
     translate: -10px;
     background-color: #244EB4;
@@ -199,8 +219,7 @@
         background-size: contain;
     }
 }
-
-
+/*--^--|| infinite scroller ||--^--*/
 
 
 
