@@ -65,9 +65,9 @@
     }
 }
 
-@media screen and (max-width: 850px) {
-    .infinite-scroller-section{
-        max-width: 780px;
+@media screen and (max-width: 760px) {
+    .infinite-scroller-section .container{
+        max-width: 45rem;
     }
 }
 
