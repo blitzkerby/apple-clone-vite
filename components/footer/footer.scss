@@ -160,4 +160,43 @@ footer {
     font-weight: 10;
     color:rgb(117,117,118)
 }
+
+
+@mixin clearOutAccordion{
+    --bs-accordion-bg: none !important;
+    --bs-accordion-color: none !important;
+
+    --bs-accordion-btn-focus-box-shadow: none !important;
+
+    --bs-accordion-active-color: none !important;
+    --bs-accordion-active-bg: none !important;
+
+    --bs-accordion-border-color: none !important;
+}
+
+.accordion{
+    @include clearOutAccordion;
+    .accordion-button{
+        padding: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 760px){
+    .footer-column-section{
+        display: block;
+    }
+    .footer-column{
+        width: 100%;
+        padding: 0 0.75rem;
+    }
+
+    .footer-container-box-separator{
+        margin-bottom: 0;
+    }
+    .footer-container-box{
+        margin-bottom: 15px;
+    }
+}
+
 /* --^--|| footer section ||--^-- */
