@@ -1,6 +1,10 @@
 /*--v-- Mac Page --v---*/
 .title-heading{
     padding-top: 0;
+    padding-left: 64px;
+}
+.title-sub-heading{
+    padding-right: 64px;   
 }
 
 section .container{
@@ -8,12 +12,19 @@ section .container{
 }
 
 section{
-    // padding: 64px;
+    margin: 100px 0;
 }
-
+.carousel-section{
+    margin: 0;
+}
 sub-header {
     padding-top: 47px;
 }
+
+.carousel-button-container {
+    padding-right: 64px !important;
+}
+
 
 .row{
     display: flex !important;
@@ -22,6 +33,12 @@ sub-header {
 .carousel-container{
     margin-left: 0 !important;
     max-width: none !important;
+}
+
+#get-to-know-mac, #buy-mac {
+    .carousel-container{
+        padding-left: 100px !important;
+    }
 }
 
 #carousel-header{
@@ -59,6 +76,9 @@ sub-header {
     border-radius: 50px;
 }
 
+.promotion-video{
+    padding: 0 64px !important;
+}
 
 .mac-title-text{
     display: flex;
@@ -71,10 +91,6 @@ sub-header {
 }
 
 .carousel-section{
-    // padding: 0 !important;
-    .container{
-        // padding: 64px;
-    }
     .container-wrapper{
         margin-left: 4rem;
     }
@@ -146,10 +162,6 @@ sub-header {
         background: url('/mac-page/card-section/mac_security__gfwda10khdym_xlarge_2x.jpg') center no-repeat;
         background-size: cover;
     }
-
-    .carousel-button-container{
-        // padding-right: 9.25rem;
-    }
 }
 
 
@@ -177,6 +189,7 @@ sub-header {
 
     background-color: whitesmoke;
     padding: 50px;
+
 
     .fw-bolder{
         svg{
@@ -319,6 +332,8 @@ sub-header {
             .bg-primary{
                 background-color:white !important
             }
+            margin-top: 20px;
+            padding-left: 64px;
         }
 
         .laptops, .displays, .desktops{
@@ -344,18 +359,18 @@ sub-header {
     }
 
     .rounded-pill-container{
-        border-radius: var(--bs-border-radius-pill) !important;
-
-
+        width: 300px;
         border-top-left-radius: 1px;
-
-
-        height: 30px;
-        display: flex;
+        border-radius: var(--bs-border-radius-pill) !important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  /* Three columns of equal width */
+        justify-content: space-around;
         align-items: center;
-        gap: 10px;
-        width: fit-content;
-        padding: 0 4px;
+        button{
+            height: 40px;
+            font-size: 16px;
+            padding: 0 20px;
+        }
     }
 }
 
@@ -499,7 +514,6 @@ sub-header {
 //------v-----SIGNIFICANT OTHERS SECTION-------V-------
 .significant-others{
     padding: 0 70px;
-    // background-color: antiquewhite;
 
     .accordion{
         max-width: 400px;
@@ -515,6 +529,7 @@ sub-header {
         align-items: center;
         height: 650px;
         background-color: #fafafa;
+        padding-left: 64px;
     }
 
     .accordion-body{
@@ -536,11 +551,10 @@ sub-header {
             width: 60%;
             object-fit: contain;
             padding: 30px;
-
             position: absolute;
-
             top:0;
             right: 0;
+            background: #fafafa;
         }
     }
     @media screen and (max-width: 1100px){
@@ -582,8 +596,6 @@ sub-header {
 
 //------v-----MAC ESSENTIALS SECTION-------v-------
 .mac-essentials{
-    display: flex;
-    justify-content: center;
     .image-list{
         padding: 0 !important;
     }
