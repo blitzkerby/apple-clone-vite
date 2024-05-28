@@ -1,8 +1,3 @@
-// import "../../components/carousel/carousel.scss";
-// import { initiateSlider } from "../../components/carousel/carouselPurpose.js";
-
-// initiateSlider("advertisement");
-
 
 window.document.querySelectorAll(".cus-card").forEach((card) => {
   const cusCard = window.document.createElement('div');

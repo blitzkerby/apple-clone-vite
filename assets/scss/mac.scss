@@ -1,19 +1,35 @@
 /*--v-- Mac Page --v---*/
+.title-heading{
+    padding-top: 0;
+}
+
+section .container{
+    max-width: 1680px !important;
+}
+
+section{
+    padding: 64px;
+}
+
 sub-header {
     padding-top: 47px;
 }
+
 .row{
     display: flex !important;
 }
+
 .carousel-container{
     margin-left: 0 !important;
 }
+
 #carousel-header{
     font-size: 4rem;
 }
 
-
 .mac-promotion-section{
+    margin-top:25px;    
+
     .title-wrapper{
         height: 169px;
     }
@@ -34,6 +50,7 @@ sub-header {
         font-weight: 500;
     }
 }
+
 
 .mac-promotion-video{
     width: inherit;
@@ -740,5 +757,26 @@ section{
 
     .pb-2{
         text-align: center
+    }
+}
+
+
+@media screen and (max-width: 860px){
+    .footer-column-section{
+        display: block !important;
+    }
+    .footer-column{
+        width: 100% !important;
+        padding: 0 0.75rem !important;
+    }
+
+    .footer-container-box-separator{
+        margin-bottom: 0 !important;
+    }
+    .footer-container-box{
+        margin-bottom: 15px !important;
+    }
+    .footer-container-border .collapse{
+        display: block !important;
     }
 }

@@ -120,9 +120,7 @@ footer {
 }
 
 .footer-legal-links{
-    // max-width: 421px;
     display: inline-flex;
-    // margin-right: 140px;
     font-size: 12px;
     list-style: none;
     gap:14px;
@@ -196,6 +194,9 @@ footer {
     }
     .footer-container-box{
         margin-bottom: 15px;
+    }
+    .footer-container-border .collapse{
+        display: block;
     }
 }
 
