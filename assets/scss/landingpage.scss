@@ -4,6 +4,29 @@
     background-size: auto 73.6rem;
 }
 
+/*--=-- iPhone 15 Pro --=--*/
+.vision-pro{
+    color: white;
+
+    background: url("/landing-page/vision-pro/vision-pro-large.jpeg") no-repeat;
+    background-position: center 40px ;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+
+    .container{
+        height:25.75rem;
+    }
+}
+
+#vision-pro-logo{
+    background-image: url("/landing-page/vision-pro/vision-pro-card.jpeg");
+    background-position: center ;
+    background-size: cover;
+}
+
+
 
 /*--=-- iPhone 15 Pro --=--*/
 .iphone-15-pro{
@@ -252,7 +275,9 @@
     html{
         width:fit-content;
     }
-
+    .vision-pro{
+        background-position: center 45px !important;
+    }
     .iphone-15-pro{
         background: url("/landing-page/iphone-15-pro/iphone-15-small-2x.jpg");
     }
