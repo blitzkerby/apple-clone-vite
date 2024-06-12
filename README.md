@@ -54,6 +54,21 @@ This will open the application in your default browser, usually at `http://local
 
 # Building for Production
 
+First, ensure that new html pages are added under `vite.config.js`:
+
+```JS
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        mac: resolve(__dirname, "mac.html"),
+        // Add more entry points as needed
+      },
+    },
+  },
+});
+```
 
 Create an optimized production build for deployment:
 
@@ -80,3 +95,4 @@ If you're planning to deploy your project on Vercel, you can leverage their spec
 ### Contributing
 
 Feel free to contribute to this project! Please create pull requests outlining your changes.
+

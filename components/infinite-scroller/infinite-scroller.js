@@ -1,12 +1,12 @@
 import './infinite-scroller.scss'
-import { InfinSliderPurpose } from "./infiniteScrollerPurpose.js"
+import { infinSliderPurpose } from "./infiniteScrollerPurpose.js"
 
 
 const slideItemsImg = [
-    { src: "../landing-page/auto-scroll/hello-kitty-island-adventure.jpg"   , alt: "Hello Kitty Island Adventure" },
-    { src: "../landing-page/auto-scroll/nba-2k24-arcade-edition.jpg"        , alt: "NBA 2K24 Arcade Edition" },
-    { src: "../landing-page/auto-scroll/so-fresh-90s-dance.jpg"             , alt: "So Fresh 90s Dance" },
-    { src: "../landing-page/auto-scroll/strength-with-jenn.jpg"             , alt: "Strength with Jenn" }
+    { src: "/home/auto-scroll/hello-kitty-island-adventure.jpg"   , alt: "Hello Kitty Island Adventure" },
+    { src: "/home/auto-scroll/nba-2k24-arcade-edition.jpg"        , alt: "NBA 2K24 Arcade Edition" },
+    { src: "/home/auto-scroll/so-fresh-90s-dance.jpg"             , alt: "So Fresh 90s Dance" },
+    { src: "/home/auto-scroll/strength-with-jenn.jpg"             , alt: "Strength with Jenn" }
 ];
 
 
@@ -55,4 +55,4 @@ slideItemsCard.forEach((item)=>{
 })
 
 
-InfinSliderPurpose(document.querySelector(".infinite-scroller-section"))
+infinSliderPurpose(document.querySelector(".infinite-scroller-section"))

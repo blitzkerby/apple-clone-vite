@@ -8,7 +8,7 @@
 .vision-pro{
     color: white;
 
-    background: url("/landing-page/vision-pro/vision-pro-large.jpeg") no-repeat;
+    background: url("/home/vision-pro/vision-pro-large.jpeg") no-repeat;
     background-position: center 40px ;
     background-size: cover;
 
@@ -21,17 +21,16 @@
 }
 
 #vision-pro-logo{
-    background-image: url("/landing-page/vision-pro/vision-pro-card.jpeg");
+    background-image: url("/home/vision-pro/vision-pro-card.jpeg");
     background-position: center ;
     background-size: cover;
 }
 
 
-
 /*--=-- iPhone 15 Pro --=--*/
 .iphone-15-pro{
     color: white;
-    background: url("/landing-page/iphone-15-pro/iphone-15-large-tall.jpg") center no-repeat;
+    background: url("/home/iphone-15-pro/iphone-15-large-tall.jpg") center no-repeat;
     border-bottom: .6rem solid #fff;
 }
 
@@ -40,18 +39,13 @@
 /*--=-- iPhone 15 --=--*/
 .iphone-15{
     color: white;
-    background: url("/landing-page/iphone-15/iphone15-large-tall.jpg") center no-repeat;
+    background: url("/home/iphone-15/iphone15-large-tall.jpg") center no-repeat;
     border-bottom: .6rem solid #fff;
+
+    h1, h2{
+        color: black
+    }
 }
-
-
-#iphone-15-title-format{
-    color: black
-}
-
-
-
-/* --v--|| Promotion section ||--v--*/
 
 
 
@@ -80,7 +74,7 @@
 .wwdc24-container{
     color: #f2f2f2;
     position: inherit;
-    background: url("/landing-page/wwdc24/promo-wwdc24-large.jpg") center no-repeat;
+    background: url("/home/wwdc24/promo-wwdc24-large.jpg") center no-repeat;
     width: auto;
     height: inherit;
 }
@@ -94,7 +88,7 @@
 /*--=-- watch series 9 --=--*/
 #watch-series-9-logo{
     margin-top: 50px;
-    background: url("/landing-page/watch-series-9/promo-logo-apple-watch-series-9-large.png") center no-repeat;
+    background: url("/home/watch-series-9/promo-logo-apple-watch-series-9-large.png") center no-repeat;
 }
 
 
@@ -105,7 +99,7 @@
 
 .watch-series-9{
     background-color: black;
-    background: url("/landing-page/watch-series-9/apple-watch-series-9-large.jpg") center no-repeat;
+    background: url("/home/watch-series-9/apple-watch-series-9-large.jpg") center no-repeat;
 }
 
 
@@ -113,33 +107,33 @@
 /*--=-- card --=--*/
 #card-logo{
     margin-top: 50px;
-    background: url("/landing-page/card/logo-large.png") center no-repeat;
+    background: url("/home/card/logo-large.png") center no-repeat;
 }
 
 #card{
-    background: url("/landing-page/card/apple-card-large.jpg") center no-repeat;   
+    background: url("/home/card/apple-card-large.jpg") center no-repeat;   
 }
 
 /*--=-- trade-in --=--*/
 #trade-in-logo {
     margin-top: 50px;
-    background: url("/landing-page/trade-in/logo-trade-in-large.png") center no-repeat;
+    background: url("/home/trade-in/logo-trade-in-large.png") center no-repeat;
 }
 
 #trade-in-iphones {
-    background: url("/landing-page/trade-in/trade-in-large.jpg") center no-repeat;
+    background: url("/home/trade-in/trade-in-large.jpg") center no-repeat;
 }
 
 
 /*--=-- iPad --=--*/
 .ipad{
     color: white;
-    background: url("/landing-page/ipad/ipad-large.jpg") center no-repeat;
+    background: url("/home/ipad/ipad-large.jpg") center no-repeat;
 }
 
 
 #ipad{
-    background: url("/landing-page/ipad/ipad-large.jpg") center no-repeat;
+    background: url("/home/ipad/ipad-large.jpg") center no-repeat;
 }
 
 .light-theme{
@@ -152,7 +146,7 @@
 /*--=-- macbook air --=--*/
 
 #macbook-air{
-    background: url("/landing-page/macbook-air/macbook-air-m3-large.jpg") center no-repeat;
+    background: url("/home/macbook-air/macbook-air-m3-large.jpg") center no-repeat;
 }
 /*--^--| two columns |--^--*/
 
@@ -229,7 +223,7 @@
     justify-content: center;
     align-items: center;
     .in-card{
-        background: url("/landing-page/auto-scroll/todays-acoustic.jpg") center no-repeat;
+        background: url("/home/auto-scroll/todays-acoustic.jpg") center no-repeat;
         background-size: contain;
     }
 }
@@ -238,7 +232,7 @@
     display: flex;
     align-items: center;
     .in-card{
-        background: url("/landing-page/auto-scroll/apple-music.jpg") center no-repeat;
+        background: url("/home/auto-scroll/apple-music.jpg") center no-repeat;
         background-size: contain;
     }
 }
@@ -279,12 +273,12 @@
         background-position: center 45px !important;
     }
     .iphone-15-pro{
-        background: url("/landing-page/iphone-15-pro/iphone-15-small-2x.jpg");
+        background: url("/home/iphone-15-pro/iphone-15-small-2x.jpg");
     }
 
 
     .iphone-15{
-        background: url("/landing-page/iphone-15/iphone-15-small_2x.jpg");
+        background: url("/home/iphone-15/iphone-15-small_2x.jpg");
     }
 
 
